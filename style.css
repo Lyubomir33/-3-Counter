@@ -1,0 +1,98 @@
+#buttons {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.counter{
+  font-size: 60px;
+  text-align: center;
+  margin-top: 185px;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.number{
+  text-align: center;
+  font-size: 75px;
+  
+}
+
+.increase {
+  padding: 7px;
+  margin-left: 14px;
+  border-radius: 12px;
+  font-size: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 6px;
+  letter-spacing: 6px;
+  color: rgb(16, 42, 66);
+  border-color: black;
+  display: transparent;
+
+  
+}
+
+.decrease {
+  padding: 7px;
+  margin-right: 14px;
+  border-radius: 12px;
+  font-size: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 6px;
+  letter-spacing: 6px;
+  color: rgb(16, 42, 66);
+  border-color: black;
+  display: transparent;
+
+}
+
+.reset {
+  padding: 7px;
+  border-radius: 12px;
+  font-size: 14px;
+  letter-spacing: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 6px;
+  color: rgb(16, 42, 66);
+  border-color: black;
+  display: transparent;
+}
+
+.increase:hover{
+  transition: 1s;
+  background-color: black;
+  color: white;
+}
+
+.increase:not(:hover){
+  transition: 1s;
+}
+
+.decrease:hover {
+  transition: 1s;
+  background-color: black;
+  color: white;
+}
+
+.decrease:not(:hover){
+  transition: 1s;
+}
+
+.reset:hover{
+  transition: 1s;
+  background-color: black;
+  color: white;
+  -webkit-transition-timing-function: 1s;
+ 
+}
+
+.reset:not(:hover){
+  transition: 1s;
+}
+
+
+
+

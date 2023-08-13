@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <h1 class="counter"> Counter </h1>
+  <p class="number"> </p>
+
+  <div id="buttons">
+
+    <button onclick="
+      decreseMinus();
+      
+    " class="decrease">DECREASE</button>
+
+    <button onclick="
+    resetScore();
+    " class="reset">RESET</button>
+
+    <button onclick="
+    incresePlus();
+    
+    " class="increase">INCREASE</button>
+
+  </div>
+
+  <script>
+
+    let increase = 0;
+
+    document.querySelector('.number').innerHTML = `${increase}`
+
+    function incresePlus() {
+      increase++
+      document.querySelector('.number').innerHTML = `${increase}`
+      colorChange();
+    }
+
+    function decreseMinus() {
+      increase--
+      document.querySelector('.number').innerHTML = `${increase}`
+      colorChange();
+    }
+
+    function resetScore (){
+      increase = 0;
+      document.querySelector('.number').innerHTML = `${increase}`
+      value.style.color = "black"
+    }
+
+    let value = document.querySelector(".number")
+
+
+    function colorChange(){
+
+      if(increase < 0){
+        value.style.color = "red";
+      } else if (increase > 0){
+        value.style.color = "green";
+      } 
+    }
+
+   
+  </script>
+
+</body>
+
+</html>
